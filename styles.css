@@ -174,6 +174,10 @@ button {
   font-weight: 400;
 }
 
+.brand span {
+  white-space: nowrap;
+}
+
 .nav-actions { display: flex; align-items: center; gap: 14px; }
 
 .preorder {
@@ -241,7 +245,7 @@ body.menu-open .menu-btn span::after {
   margin-top: calc(var(--nav-h) * -1);
   display: grid;
   place-items: center;
-  padding: calc(var(--nav-h) + 24px) var(--pad) 72px;
+  padding: calc(var(--nav-h) + 24px) var(--pad) 18vh;
   overflow: hidden;
 }
 
@@ -250,7 +254,7 @@ body.menu-open .menu-btn span::after {
   inset: 0;
   background:
     linear-gradient(to bottom, rgba(12, 13, 27, 0.15), rgba(12, 13, 27, 0.2) 70%, var(--bg)),
-    url("https://www.rockstargames.com/VI/_next/static/media/desktop.0f24gg8jqbkum.jpg?akim=1&imdensity=1&imwidth=1920") center 30% / cover no-repeat;
+    url("https://www.rockstargames.com/VI/_next/static/media/desktop.0f24gg8jqbkum.jpg?akim=1&imdensity=1&imwidth=1920") 62% 42% / cover no-repeat;
 }
 
 .hero-center {
@@ -272,10 +276,11 @@ body.menu-open .menu-btn span::after {
   font-size: clamp(2rem, 5vw, 3.15rem);
   line-height: 1;
   letter-spacing: -0.012em;
-  background-image: radial-gradient(circle at 40% -80vh, rgb(255, 179, 135) 0%, rgb(252, 82, 67) 28%, rgb(157, 47, 106) 78%, rgba(32, 31, 66, 0) 100%);
+  background-image: linear-gradient(180deg, #ffd0b0 0%, #ff7a4e 48%, #ff5340 100%);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
+  color: #ff7a4e;
 }
 
 .down {
@@ -461,7 +466,7 @@ h2.name {
   margin: 0;
   color: var(--pink);
   font-weight: 700;
-  font-size: clamp(3.6rem, 7.4vw, 6.6rem);
+  font-size: clamp(2.8rem, 5.6vw, 5rem);
   line-height: 0.88;
   letter-spacing: -0.03em;
 }

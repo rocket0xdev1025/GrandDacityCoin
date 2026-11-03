@@ -69,11 +69,6 @@ document.addEventListener("keydown", (event) => {
   if (document.body.classList.contains("menu-open")) menuBtn.click();
 });
 
-const order = document.querySelector("#order");
-document.querySelectorAll("[data-order]").forEach((button) => {
-  button.addEventListener("click", () => openOverlay(order));
-});
-
 const news = document.querySelector(".news");
 news.querySelector(".news-toggle").addEventListener("click", () => {
   news.classList.add("open");
